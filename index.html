@@ -377,14 +377,77 @@
       </div>
     </section>    
   </footer>
+  <!-- Pop Up Hero -->
   <div class="modal is-hidden" data-modal>
-    <div class="modal-content">
+    <div class="modal-content">      
       <div class="modal-box">
+        <!-- Close Button -->
         <button class="close-modal-button" data-modal-close>
           <svg class="close-modal-svg">
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
+        <!-- Form Title -->
+        <p class="form-title">
+          Leave your information and we'll call you back
+        </p>
+        <!-- Form -->
+        <div class="form-container">
+          <form action="" method="get" autocomplete="off" class="contact-form" name="hero-form">
+            <!-- Name Section -->
+            <div>
+              <label for="form-name" class="form-label">Name</label>
+              <div class="form-input-container">
+                <input type="text" id="form-name" name="name" class="form-input"
+                pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$">
+                <svg class="form-input-icons">
+                  <use href="./images/icons.svg#form-name-icon"></use>
+                </svg>
+              </div>
+            </div>            
+            <!-- Telephone Section -->
+            <div>
+              <label for="form-tel" class="form-label">Telephone</label>
+              <div class="form-input-container">
+                <input type="tel" id="form-tel" name="tel" class="form-input"
+                pattern="/(?!:\A|\s)(?!(\d{1,6}\s+\D)|((\d{1,2}\s+){2,2}))(((\+\d{1,3})|(\(\+\d{1,3}\)))\s*)?((\d{1,6})|(\(\d{1,6}\)))\/?(([ -.]?)\d{1,5}){1,5}((\s*(#|x|(ext))\.?\s*)\d{1,5})?(?!:(\Z|\w|\b\s))/gm">
+                <svg class="form-input-icons">
+                  <use href="./images/icons.svg#form-telephone-icon"></use>
+                </svg>
+              </div>
+            </div>            
+            <!-- E-mail Section -->
+            <div>
+              <label for="form-email" class="form-label">E-mail</label>
+              <div class="form-input-container">
+                <input type="email" id="form-email" name="email" class="form-input"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                <svg class="form-input-icons">
+                  <use href="./images/icons.svg#form-email-icon"></use>
+                </svg>
+              </div>
+            </div>            
+            <!-- Comments Section -->
+            <div class="form-comment-container">
+              <label class="form-label" class="form-label">Comments</label>
+              <textarea class="form-comment-text" placeholder="Enter the text"></textarea>
+            </div>            
+            <!-- Checkbox Section -->
+            <div class="form-checkbox">              
+              <label for="checkbox" class="form-checkbox-label"></label>
+                <input type="checkbox" name="checkbox" id="checkbox" value="checked" class="form-checkbox-input">
+                <span class="checkbox-text">
+                  I agree with the letter and accept the
+                  <a href="#" class="terms-and-conditions">Terms and Conditions</a>
+                </span>
+            </div>
+            <!-- Confirm-button Section -->
+            <div class="form-submit-button">
+              <input class="submit-button" type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+        
       </div>
     </div>
   </div>
