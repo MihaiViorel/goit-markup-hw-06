@@ -498,10 +498,14 @@ body {
 }
 
 /* ----------------------------------- Footer ------------------------------------------*/
+.footer {
+  display: flex;
+  justify-content: center;
+}
 
 .logo-footer {
-  padding: 60px 0px 28px 215px;
-  margin: 0 auto;
+  margin: 0px;
+  padding: 60px 0px 28px 0px;
 }
 
 .global-footer-container ul {
@@ -510,8 +514,7 @@ body {
   justify-content: space-between;
   height: 72px;
   margin: 0px;
-  padding: 0px 0px 60px 215px;
-  margin: 0 auto;
+  padding: 0px 0px 60px 0px;  
 }
 
 /* ---------------- Observatii ------------- */
@@ -582,7 +585,8 @@ body {
 
 .main-hero-container {
   background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/Homepage/Hero-Background.jpg');
-  width: 1600px;
+  /* width: 1600px; */
+  background-size: cover;
   display: flexbox;
   justify-content: center;
   margin: 0 auto;
@@ -611,7 +615,7 @@ body {
 
 .main-our_team-list-social-all {
   display: flex;
-  gap: 8px;
+  gap: 7px;
   justify-content: center;
   padding: 16px 32px 30px 32px;
 }
@@ -701,13 +705,10 @@ body {
 }
 
 /* ---------------- Footer Social Media ------------- */
-.footer {
-  display: flex;
-  justify-content: flex-start;
-}
 
 .footer-find_us {
   padding: 75px 0px 96px 70px;
+  
 }
 
 .footer-find_us p {
@@ -1010,7 +1011,6 @@ body {
   border: 1px solid rgba(33, 150, 243, 1);
   transition: border 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
   border-radius: 4px;
-  /* background-color: blue; */
 }
 
 .form-input:focus + svg {  
@@ -1055,7 +1055,6 @@ body {
   transition: border 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
   border-radius: 4px;
 }
-
 
 .form-checkbox {
   display: flex;
@@ -1120,4 +1119,87 @@ body {
 .submit-button:focus {
   background-color: rgba(24, 140, 232, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: box-shadow, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ---------------------------- Footer ---------------------------- */
+.newsletter-form {
+  padding: 72px 0px 93px 93px;
+  display: flex;
+  gap: 12px;
+}
+
+.global-footer-container {
+  width: 231px;
+}
+
+.newsletter-form-label {
+  font-size: 700;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);  
+}
+
+.newsletter-form-input {
+  margin-top: 20px;
+  width: 358px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+  background-color: rgba(47, 48, 58, 1);
+}
+
+.newsletter-form-input::placeholder {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding: 15px 0px 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-form-input:hover,
+.newsletter-form-input:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  transition: border 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+  border-radius: 4px;
+}
+
+.newsletter-subscribe-button {
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  color: var(--white);
+  background-color: var(--hero-button-focus);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0px 77px 0px 43px;    
+}
+
+.footer-newsletter-button {
+  padding-top: 40px;
+  position: relative;
+}
+
+.newsletter-subscribe-icon {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 53px;
+  left: 148px;  
+}
+
+
+
